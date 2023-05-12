@@ -9,7 +9,7 @@ function getContent() {
       menuItems.forEach((menuItem) => displayMenuItem(menuItem))
     );
 }
-
+//Display items
 function displayMenuItem(menuItem) {
   const menuItemArticle = document.createElement("article");
   menuItemArticle.classList = "menu-item";
