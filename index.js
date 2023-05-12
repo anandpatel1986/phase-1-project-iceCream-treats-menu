@@ -1,41 +1,47 @@
 const menuContainer = document.querySelector(".menu-container");
-const filterBtns = document.querySelectorAll(".filter-btn");
+const btnContainer = document.querySelector(".btn-container");
 document.addEventListener("DOMContentLoaded", getContent);
-
-filterBtns.forEach(btn=>btn.addEventListener("click",displayFilteredMenu))
 
 function getContent() {
   fetch("http://localhost:3000/menu")
     .then((resp) => resp.json())
-    .then((menuItems) =>
-      menuItems.forEach((menuItem) => displayMenuItem(menuItem))
-    );
+    .then(function (menuItems) {
+      displayMenuItem(menuItems);
+      const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          const itemCatagory = e.currentTarget.dataset.catagory;
+          const manuCatagory = menuItems.filter(function (menuItem) {
+            if (menuItem.catagory === itemCatagory) {
+              return menuItem;
+            }
+          });
+          //console.log(manuCatagory);
+          if (itemCatagory === "all") {
+            displayMenuItem(menuItems);
+          } else {
+            displayMenuItem(manuCatagory);
+          }
+        });
+      });
+    });
 }
 
 //Display items
-function displayMenuItem(menuItem) {
-  const menuItemArticle = document.createElement("article");
-  menuItemArticle.classList = "menu-item";
+function displayMenuItem(menuItems) {
+  let dispalyList = menuItems.map((menuItem) => {
+    return `<article class="menu-item">
+                <img src=${menuItem.image} alt=${menuItem.menuItem} class="photo" />
+                <div class="item-info">
+                    <h4>${menuItem.menuItem}</h4>
+                    <h4 class="price">$${menuItem.price}</h4>
+                    <p class="item-text">
+                    ${menuItem.desc}
+                    </p>
+                </div>
+            </article>`;
+  });
 
-  const itemImage = document.createElement("img");
-  itemImage.src = menuItem.image;
-  itemImage.alt = menuItem.menuItem;
-
-  const infoDiv = document.createElement("div");
-  infoDiv.classList = "item-info";
-  const itemTitle = document.createElement("h4");
-  itemTitle.textContent = menuItem.menuItem;
-  const itemPrice = document.createElement("h4");
-  itemPrice.textContent = `$${menuItem.price}`;
-  const itemDesc = document.createElement("p");
-  itemDesc.textContent = menuItem.desc;
-  infoDiv.append(itemTitle, itemPrice, itemDesc);
-
-  menuItemArticle.append(itemImage, infoDiv);
-  menuContainer.appendChild(menuItemArticle);
+  dispalyList = dispalyList.join("");
+  menuContainer.innerHTML = dispalyList;
 }
-
-function displayFilteredMenu(e){
-    const itemCatagory = e.target.dataset.catagory;
-    
-    }
