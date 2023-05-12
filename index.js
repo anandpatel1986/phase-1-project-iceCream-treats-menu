@@ -38,4 +38,5 @@ function displayMenuItem(menuItem) {
 function displayFilteredMenu(e){
     const itemCatagory = e.target.dataset.catagory;
     console.log(itemCatagory)
+    
 }
