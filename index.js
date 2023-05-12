@@ -2,6 +2,8 @@ const menuContainer = document.querySelector(".menu-container");
 const filterBtns = document.querySelectorAll(".filter-btn");
 document.addEventListener("DOMContentLoaded", getContent);
 
+filterBtns.forEach(btn=>btn.addEventListener("click",displayFilteredMenu))
+
 function getContent() {
   fetch("http://localhost:3000/menu")
     .then((resp) => resp.json())
@@ -9,6 +11,7 @@ function getContent() {
       menuItems.forEach((menuItem) => displayMenuItem(menuItem))
     );
 }
+
 //Display items
 function displayMenuItem(menuItem) {
   const menuItemArticle = document.createElement("article");
@@ -30,4 +33,9 @@ function displayMenuItem(menuItem) {
 
   menuItemArticle.append(itemImage, infoDiv);
   menuContainer.appendChild(menuItemArticle);
+}
+
+function displayFilteredMenu(e){
+    const itemCatagory = e.target.dataset.catagory;
+    console.log(itemCatagory)
 }
