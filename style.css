@@ -1,3 +1,29 @@
 body{
     background-color: rgb(187, 227, 206);
     }
+
+    img{
+        display: block;
+    }
+    .menu {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: grid;
+        gap: 3rem 2rem;
+        justify-items: center;
+      }
+
+      .menu-item {
+        display: grid;
+        border: 1px solid #333;
+        gap: 1rem 2rem;
+        max-width: 25rem;
+      }
+      .photo {
+        object-fit: cover;
+        height: 200px;
+        border: 0.25rem solid var(--clr-gold);
+        border-radius: var(--radius);
+      }
+    

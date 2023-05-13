@@ -37,11 +37,14 @@ function displayMenuItem(menuItems) {
                     <h4 class="price">$${menuItem.price}</h4>
                     <p class="item-text">
                     ${menuItem.desc}
-                    </p>
+                    </p
                 </div>
             </article>`;
   });
 
   dispalyList = dispalyList.join("");
   menuContainer.innerHTML = dispalyList;
+  const articles = document.querySelectorAll(".menu-item");
+  articles.forEach((article) => console.log(article));
+
 }
