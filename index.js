@@ -51,8 +51,10 @@ function displayMenuItem(menuItems) {
   });
 }
 function highLight(e) {
-  e.target.style.border = "5px dotted orange";
-}
+  e.target.style.border = "5px solid blue";
+  e.target.style.background = "rgba(220, 230, 255)";
+ }
 function removeHighLight(e) {
-  e.target.style.border = "1px solid #333";
+  e.target.style.border = "1px solid blue";
+  e.target.style.background = "rgb(240, 248, 255)";
 }

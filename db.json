@@ -1,86 +1,76 @@
 {
-    "menu" : [
-        {
-            "id" : 1,
-            "menuItem" : "Banana Split Sundae",
-            "catagory" : "icecream",
-            "price"    :  10.99,
-            "image" : "./images/item-1.jpg",
-            "desc" : "Scoops of chocolate, vanilla, and strawberry ice cream are placed between the banana slices. The ice cream is then covered with chocolate syrup, whipped cream, nuts, and a cherry on top.",
-            "likes" : 8
-        },
-        {
-            "id" : 2,
-            "menuItem" : "Hot Brownie Sundae",
-            "catagory" : "icecream",
-            "price"    :  10.05,
-            "image" : "./images/item-2.jpg",
-            "desc" : " Made with hot brownies, vanilla ice cream, chocolate syrup, hot fudge, and whipped cream.",
-            "likes" : 5
-        },
-        {
-            "id" : 3,
-            "menuItem" : "Strawberry Sundae",
-            "catagory" : "icecream",
-            "price"    :  8.05,
-            "image" : "./images/item-3.jpg",
-            "desc" : "A sweet and slightly tart strawberry sauce is paired with vanilla ice cream and garnished with even more fresh strawberries.",
-            "likes" : 6
-        },
-        {
-            "id" : 4,
-            "menuItem" : "Oreo Blast",
-            "catagory" : "shakes",
-            "price"    :  4.49,
-            "image" : "./images/item-4.jpg",
-            "desc" : "Real Ice Cream blended with sweet OREO Crème and OREO Cookie pieces, topped with even more OREO Cookie pieces.",
-            "likes" : 8
-        },
-        {
-            "id" : 5,
-            "menuItem" : "Ferrero Rocher shake",
-            "catagory" : "shakes",
-            "price"    :  5.55,
-            "image" : "./images/item-5.jpg",
-            "desc" : "This Ferrero Rocher milkshake is a creamy shake with the flavours of hazelnut and chocolate. Made with vanilla ice cream, Nutella, and Ferrero Rocher chocolates.",
-            "likes" : 8
-        },
-        {
-            "id" : 6,
-            "menuItem" : "Brownie Fudge",
-            "catagory" : "shakes",
-            "price"    :  6.75,
-            "image" : "./images/item-6.jpg",
-            "desc" : "Loaded with brownie chunks and decorated with ganache, this milkshake is packed with delicious chocolate flavour.",
-            "likes" : 7
-        },
-        {
-            "id" : 7,
-            "menuItem" : "Hot chocolate",
-            "catagory" : "hotBevarages",
-            "price"    :  3.29,
-            "image" : "./images/item-7.jpg",
-            "desc" : "Rich and full of flavor, our hot chocolate combines dark chocolate and steamed milk for a warm, sweet treat. Topped with whipped cream and chocolate drizzle.",
-            "likes" : 9
-        },
-        {
-            "id" : 8,
-            "menuItem" : "Cofee Mocha",
-            "catagory" : "hotBevarages",
-            "price"    :  4.95,
-            "image" : "./images/item-8.jpg",
-            "desc" : "A shot of espresso combined with steamed milk, chocolate, and topped with a layer of foam, Indulge in the rich and chocolatey flavor. ",
-            "likes" : 10
-        },
-        {
-            "id" : 9,
-            "menuItem" : "Caramel Latte",
-            "catagory" : "hotBevarages",
-            "price"    :  4.45,
-            "image" : "./images/item-9.jpg",
-            "desc" : "creamy steamed milk poured over caramel sauce. Topped with whipped cream and caramel sauce.",
-            "likes" : 6
-        }
-
-    ]
+  "menu": [
+    {
+      "id": 1,
+      "menuItem": "Banana Split Sundae",
+      "catagory": "icecream",
+      "price": 10.99,
+      "image": "./images/item-1.jpg",
+      "desc": "Scoops of chocolate, vanilla, and strawberry ice cream are placed between the banana slices. The ice cream is then covered with chocolate syrup, whipped cream, nuts, and a cherry on top."
+    },
+    {
+      "id": 2,
+      "menuItem": "Hot Brownie Sundae",
+      "catagory": "icecream",
+      "price": 10.05,
+      "image": "./images/item-2.jpg",
+      "desc": " Made with hot brownies, vanilla ice cream, chocolate syrup, hot fudge, and whipped cream."
+    },
+    {
+      "id": 3,
+      "menuItem": "Strawberry Sundae",
+      "catagory": "icecream",
+      "price": 8.05,
+      "image": "./images/item-3.jpg",
+      "desc": "A sweet and slightly tart strawberry sauce is paired with vanilla ice cream and garnished with even more fresh strawberries."
+    },
+    {
+      "id": 4,
+      "menuItem": "Oreo Blast",
+      "catagory": "shakes",
+      "price": 4.49,
+      "image": "./images/item-4.jpg",
+      "desc": "Real Ice Cream blended with sweet OREO Crème and OREO Cookie pieces, topped with even more OREO Cookie pieces."
+    },
+    {
+      "id": 5,
+      "menuItem": "Ferrero Rocher shake",
+      "catagory": "shakes",
+      "price": 5.55,
+      "image": "./images/item-5.jpg",
+      "desc": "This Ferrero Rocher milkshake is a creamy shake with the flavours of hazelnut and chocolate. Made with vanilla ice cream, Nutella, and Ferrero Rocher chocolates."
+    },
+    {
+      "id": 6,
+      "menuItem": "Brownie Fudge",
+      "catagory": "shakes",
+      "price": 6.75,
+      "image": "./images/item-6.jpg",
+      "desc": "Loaded with brownie chunks and decorated with ganache, this milkshake is packed with delicious chocolate flavour."
+    },
+    {
+      "id": 7,
+      "menuItem": "Hot chocolate",
+      "catagory": "hotBevarages",
+      "price": 3.29,
+      "image": "./images/item-7.jpg",
+      "desc": "Rich and full of flavor, our hot chocolate combines dark chocolate and steamed milk for a warm, sweet treat. Topped with whipped cream and chocolate drizzle."
+    },
+    {
+      "id": 8,
+      "menuItem": "Cofee Mocha",
+      "catagory": "hotBevarages",
+      "price": 4.95,
+      "image": "./images/item-8.jpg",
+      "desc": "A shot of espresso combined with steamed milk, chocolate, and topped with a layer of foam, Indulge in the rich and chocolatey flavor. "
+    },
+    {
+      "id": 9,
+      "menuItem": "Caramel Latte",
+      "catagory": "hotBevarages",
+      "price": 4.45,
+      "image": "./images/item-9.jpg",
+      "desc": "creamy steamed milk poured over caramel sauce. Topped with whipped cream and caramel sauce."
+    }
+  ]
 }
