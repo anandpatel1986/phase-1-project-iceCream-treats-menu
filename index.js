@@ -2,6 +2,7 @@ const menuContainer = document.querySelector(".menu-container");
 const btnContainer = document.querySelector(".btn-container");
 document.addEventListener("DOMContentLoaded", getContent);
 
+//fetch data from local server and pass data to call back functions to display first all menu items and then filtered menu items
 function getContent() {
   fetch("http://localhost:3000/menu")
     .then((resp) => resp.json())
@@ -16,7 +17,7 @@ function getContent() {
               return menuItem;
             }
           });
-          //console.log(manuCatagory);
+          // compare clicked button text and invoke display menu accordingly
           if (itemCatagory === "all") {
             displayMenuItem(menuItems);
           } else {
@@ -27,7 +28,7 @@ function getContent() {
     });
 }
 
-//Display items
+//Display menu items
 function displayMenuItem(menuItems) {
   let dispalyList = menuItems.map((menuItem) => {
     return `<article class="menu-item">
@@ -45,15 +46,18 @@ function displayMenuItem(menuItems) {
   dispalyList = dispalyList.join("");
   menuContainer.innerHTML = dispalyList;
   const articles = document.querySelectorAll(".menu-item");
+  //adds event listners on mouse event and invoke call back function
   articles.forEach((article) => {
     article.addEventListener("mouseenter", highLight);
     article.addEventListener("mouseleave", removeHighLight);
   });
 }
+//highlight border and change background color on mouseenter event
 function highLight(e) {
   e.target.style.border = "5px solid blue";
   e.target.style.background = "rgba(220, 230, 255)";
 }
+//remove effects caused by mouseenter event and change state to origin on mouseleave event
 function removeHighLight(e) {
   e.target.style.border = "1px solid blue";
   e.target.style.background = "rgb(240, 248, 255)";
