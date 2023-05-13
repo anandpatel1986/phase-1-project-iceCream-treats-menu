@@ -3,9 +3,6 @@ It is a single page app which populates menu items for iceCream Treats. There ar
 
 ## Installation
 
-
-! [](iceCream Treats.gif)
-
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
