@@ -4,7 +4,7 @@ It is a single page app which populates menu items for iceCream Treats. There ar
 ## Installation
 
 
-! []iceCream Treats.gif
+! [](iceCream Treats.gif)
 
 ## Contributing
 
