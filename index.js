@@ -47,8 +47,12 @@ function displayMenuItem(menuItems) {
   const articles = document.querySelectorAll(".menu-item");
   articles.forEach((article) => {
     article.addEventListener("mouseenter", highLight);
+    article.addEventListener("mouseleave", removeHighLight);
   });
 }
 function highLight(e) {
   e.target.style.border = "5px dotted orange";
+}
+function removeHighLight(e) {
+  e.target.style.border = "1px solid #333";
 }
