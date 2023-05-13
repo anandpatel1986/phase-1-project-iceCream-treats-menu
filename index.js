@@ -45,6 +45,10 @@ function displayMenuItem(menuItems) {
   dispalyList = dispalyList.join("");
   menuContainer.innerHTML = dispalyList;
   const articles = document.querySelectorAll(".menu-item");
-  articles.forEach((article) => console.log(article));
-
+  articles.forEach((article) => {
+    article.addEventListener("mouseenter", highLight);
+  });
+}
+function highLight(e) {
+  e.target.style.border = "5px dotted orange";
 }
