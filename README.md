@@ -3,8 +3,9 @@ It is a single page app which populates menu items for iceCream Treats. There ar
 
 ## Installation
 
+![iceCream Treats](https://github.com/anandpatel1986/phase-1-project-iceCream-treats-menu/assets/126585537/8c82ab3d-31c5-4f50-8eb2-879c810fde73)
 
-! [](iceCream Treats.gif)
+
 
 ## Contributing
 
